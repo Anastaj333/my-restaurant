@@ -1,0 +1,58 @@
+#test {
+    background: linear-gradient(to right, var(--title-color), #e85d05);
+    border-radius: 1.5rem;
+    position: relative;
+    padding: 0.2rem;
+}
+
+
+.container {
+    margin: 0.5rem;
+    background-color: white;
+    display: flex;
+    gap: 6rem;
+    padding-top: 1.5vw;
+    padding-bottom: 4vw;
+    border-radius: 1rem;
+}
+.titl {
+    position: absolute;
+    top: -1rem;
+    left: 38%;
+    background-color: white;
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+.titl span {
+    color: var(--title-color);
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.box p{
+    text-align: center;
+    line-height: 1.6rem;
+    letter-spacing: 1px ;
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width: 260px) and (max-width: 1080px) {
+    .titl {
+        position: initial;
+        background-color: transparent;
+    }
+    .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

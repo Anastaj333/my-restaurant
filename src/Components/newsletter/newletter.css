@@ -1,0 +1,70 @@
+#newletter{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 4rem;
+}
+#newletter h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+#newletter h1 span{
+    color: var(--title-color);
+}
+#newletter p {
+    max-width: 65%;
+    text-align: center;
+}
+#newletter input{
+    padding: 1rem 2.5rem;
+    border: 3px solid var(--title-color);
+}
+#newletter button{
+    padding: 1rem 2.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(to right, var(--title-color), #e85d05);
+    border: 3px solid var(--title-color);
+    transition: 0.3s ease-in-out;
+}
+.bttns button:hover {
+    letter-spacing: 0.2rem;
+    padding: 1rem 3.5rem;
+}
+.bttns {
+    background-color: #e85d05;
+}
+
+@media screen and (min-width: 260px) and (max-width: 720px) {
+    #newletter {
+        padding: 2ch.8rem;
+        border-radius: 0.5rem;
+    }
+    #newletter input {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .bttns {
+        border-radius: 1rem;
+    }
+    #newletter button {
+        margin-top: 0ch.5rem;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    #newletter button:hover {
+        padding: 0.5rem;
+    }
+    #newletter h1{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

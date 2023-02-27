@@ -1,0 +1,90 @@
+#services{
+    margin: 2rem 4rem;
+}
+
+.title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.title h2{
+    font-size: 2.8rem;
+    color:var(--h2--color) ;
+    text-transform: uppercase; 
+}
+.title p{
+    padding: 0 10vw;
+    font-size:0.9rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 260px) and (max-width: 1080px){
+    .title{
+        gap:1rem;
+    }
+    .title h1{
+        font-size: 2rem;
+    }
+    .title p{
+        padding: 0 1vw;
+    }
+    
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10vw;
+    margin-top: 4rem;
+}
+
+.service{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 1.26rem;
+   padding: 0 3vw;
+ 
+}
+.service img{
+   height: 2.4rem;
+   width: 2.3rem;
+   margin-left: 39%;
+}
+.service p{
+    padding: 0.10vw;
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: 0.9rem;
+}
+.service button{
+    padding: 0.3rem 0.6rem;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    background-color: var(--title-color);
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+.service button:hover{
+    background-color: var(--h2--color);
+}
+
+.yellow{
+    background-color: var(--h2--color) !important;
+}
+.yellow:hover{
+    background-color: var(--title-color) !important;
+}
+
+@media screen and (min-width: 260px) and (max-width: 1080px) {
+    #services {
+        margin: 2rem;
+    }
+    .services {
+        grid-template-columns:  1fr;
+        gap: 2.6rem;
+    }
+};

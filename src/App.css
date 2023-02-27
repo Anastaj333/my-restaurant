@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,700;1,400&family=Nunito:wght@400;600;800&family=Poppins:wght@500;600&family=Quicksand:wght@300&family=Tajawal:wght@200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+:root {
+  --h2--color:#f9c74f;
+  --title-color:#fc4958;
+}
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/*=============== LAYOUT ============*/
+.container {
+  padding: 0 4vw;
+}
+
+section,
+footer,
+.lower__footer{
+  margin: 0 5vw;
+
+}
+
+section:first-of-type{
+  margin: -2rem 0 3.5rem 0;
+
+}
+section{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 260px) and (max-width: 1080px) {
+  section:first-of-type{
+    margin: -0.8rem 0 3.2rem 0;
+  
+  }
+}

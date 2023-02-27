@@ -1,0 +1,60 @@
+
+.footer {
+    padding: 4vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 6rem;
+    color: white;
+    background-image:linear-gradient(to right, var(--title-color), #e85d05);
+}
+.contact p {
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+.contact h3{
+    font-size: 2rem;
+}
+.icons {
+    display: flex;
+    gap: 4vw;
+    margin-top: 2vw;
+}
+.icons li {
+    padding: 0.4rem 0.6rem;
+    background-color: white;
+    color: #e85d05;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 1.2rem;
+}
+.icons li:hover {
+    background-color: black;
+}
+.contact img {
+    filter: brightness(0) invert(1);
+    width: 10vw;
+}
+
+@media screen and (min-width: 260px) and (max-width: 1080px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+    .contact img{
+        height: 4rem;
+        width: 10rem;
+    }
+    .footer {
+        gap: 3.5rem;
+        }
+    .icons {
+            gap: 7vw;
+        }
+    
+};
+@media screen and (min-width: 260px) and (max-width:480px) {
+    .contact h3{
+        display: block;
+    }
+ 
+};
